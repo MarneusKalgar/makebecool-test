@@ -1,4 +1,4 @@
-#Markup for makebecool test
+#Makebecool test
 The modular "BEM like" approach to the project scaffolding is inspired by [Gulp Front Bilerplate](https://github.com/zoxon/gulp-front)
 
 ##Demo
