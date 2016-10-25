@@ -1,0 +1,26 @@
+include ../header/header
+include ../about/about
+include ../technology/technology
+include ../safety/safety
+include ../footer/footer
+
+mixin page
+	// block header
+	+header()
+	// end block header
+
+	//block about
+	+about()
+	//end block about
+
+	//block technology
+	+technology()
+	//end block technology
+	
+	//block safety
+	+safety()
+	//block safety
+
+	//block footer
+	+footer()
+	//end block footer

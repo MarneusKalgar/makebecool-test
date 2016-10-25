@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>SUN FOODS Еко-бренд</title>
+    <meta charset="utf-8"/>
+    <meta content="Igor Chernobay" name="author"/>
+    <meta content="SUNFOODS EKO BRAND" name="description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- endbuild-->
+    <style>
+      @font-face {
+      	font-family: 'Comfortaa';
+      	font-style: 'normal';
+      	font-weight: '400';
+      	src: url("/fonts/Comfortaa-Regular.woff2") format('woff2'), url("/fonts/Comfortaa-Regular.woff") format('woff');
+      }
+      @font-face {
+      	font-family: 'Kurale';
+      	font-style: 'normal';
+      	font-weight: '700';
+      	src: url("/fonts/Kurale-Regular.woff2") format('woff2'), url("/fonts/Kurale-Regular.woff") format('woff');
+      }
+      
+      body {
+      	font-family: sans-serif;
+      }
+      .fonts-loaded body {
+      	font-family: 'Comfortaa';
+      	font-weight: 400;
+      	font-style: normal;
+      }
+      .fonts-loaded h1,
+      .fonts-loaded h2, {
+      	font-family: 'Kurale';
+      	font-weight: 400;
+      	font-style: normal;
+      }
+      		
+    </style>
+    <script>
+      //FOUT with class and caching
+      //More info http://web-standards.ru/articles/web-font-loading-patterns/ and http://css-live.ru/articles/ischerpyvayushhee-rukovodstvo-po-strategiyam-zagruzki-veb-shriftov.html#fout-class
+      (function() {
+      	// Optimization for Repeat Views
+      	if( sessionStorage.foutFontsLoaded ) {
+      		document.documentElement.classname += " fonts-loaded";
+      	}
+      
+      	// FontFaceObserver https://github.com/bramstein/fontfaceobserver
+      	(function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+      	function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+      	function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+      
+      	(function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+      	this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+      	function x(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,D=null,E=null;function H(){if(null===D){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}D=""!==a.style.font}return D}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}
+      	A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,C=b||3E3,F=(new Date).getTime();return new Promise(function(a,b){null===E&&(E=!!document.fonts);if(E){var J=new Promise(function(a,b){function e(){(new Date).getTime()-F>=C?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){q=setTimeout(c,C)});Promise.race([K,J]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function t(){var b;
+      	if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==u&&g==u&&h==u||f==v&&g==v&&h==v||f==w&&g==w&&h==w)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function G(){if((new Date).getTime()-F>=C)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===
+      	a||void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,t();q=setTimeout(G,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,u=-1,v=-1,w=-1,d=document.createElement("div");d.dir="ltr";x(e,I(c,"sans-serif"));x(n,I(c,"serif"));x(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);u=e.a.offsetWidth;v=n.a.offsetWidth;w=p.a.offsetWidth;G();z(e,function(a){f=a;t()});x(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;t()});x(n,
+      	I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+      
+      	//Loading font-faces
+      	var comfortaa = new FontFaceObserver('Comfortaa', {
+      		weight: 400
+      	});
+      	var kurale = new FontFaceObserver('Kurale', {
+      		weight: 700
+      	});
+      
+      	comfortaa.load().then(function () {
+      		console.log('Comfortaa has been loaded.');
+      	}).catch(function () {
+      		console.log('Comfortaa failed to load.');
+      	});
+      	kurale.load().then(function () {
+      		console.log('Kurale has been loaded.');
+      	}).catch(function () {
+      		console.log('Kurale failed to load.');
+      	});
+      
+      	Promise.all([comfortaa.load(), kurale.load()]).then(function () {
+      		document.documentElement.className += " fonts-loaded";
+      		// Optimization for Repeat Views
+      		sessionStorage.foutFontsLoaded = true;
+      	});
+      
+      })();
+    </script>
+  </head>
+  <body class="page">
+    <div class="page__wrap">
+      <!-- block header-->
+      <header class="header">
+        <!-- block logo--><a class="logo" id="logo" href="#">
+        <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="128.719" height="48.563" viewBox="0 0 128.719 48.563">
+          <path d="M127.948 4.856V1.128l-.86 3.728h-.72l-.85-3.728v3.728h-.763V.182h1.256l.734 3.223.71-3.223h1.258v4.674h-.764zm-4.856 0h-.8V.998h-1.218V.182h3.207v.816h-1.188v3.858zm-9.095 11.528c.96.414 1.726.8 2.303 1.16.577.358 1.07.865 1.49 1.512.42.65.628 1.474.628 2.468 0 1.416-.456 2.546-1.37 3.388-.912.838-2.117 1.262-3.607 1.262-1.608 0-3.168-.496-4.68-1.483v-3.3c.87.688 1.636 1.19 2.305 1.505.67.315 1.375.47 2.126.47 1.27 0 1.903-.47 1.903-1.412 0-.325-.127-.626-.38-.91-.254-.288-.865-.632-1.835-1.045-.967-.407-1.734-.79-2.3-1.137-.568-.352-1.056-.852-1.47-1.503-.41-.652-.616-1.483-.616-2.5 0-1.315.45-2.378 1.347-3.186.896-.807 2.096-1.21 3.6-1.21 1.386 0 2.85.396 4.392 1.185v2.995c-1.722-.914-3.09-1.374-4.11-1.374-.584 0-1.048.115-1.39.35-.346.227-.517.532-.517.912 0 .294.124.572.37.834.25.262.854.603 1.812 1.022zm-14.874 9.59h-5.36V10.656h5.72c2.21 0 3.956.716 5.243 2.146 1.284 1.43 1.928 3.274 1.928 5.543 0 2.376-.654 4.24-1.956 5.6-1.303 1.352-3.164 2.03-5.575 2.03zm3.106-11.21c-.736-.865-1.79-1.3-3.164-1.3h-2.07v9.704h2.108c1.366 0 2.412-.445 3.137-1.33.724-.89 1.088-2.06 1.088-3.516 0-1.505-.367-2.692-1.1-3.56zm-18.205 11.41c-2.197 0-3.988-.775-5.367-2.326-1.38-1.548-2.072-3.393-2.072-5.526 0-2.095.687-3.934 2.057-5.505 1.372-1.572 3.166-2.357 5.382-2.357 2.208 0 4 .79 5.364 2.364 1.37 1.576 2.054 3.406 2.054 5.498 0 2.118-.695 3.96-2.08 5.516-1.388 1.558-3.17 2.336-5.34 2.336zm2.962-11.24c-.75-.856-1.737-1.283-2.962-1.283-1.234 0-2.226.428-2.977 1.285-.75.852-1.128 1.984-1.128 3.387 0 1.395.378 2.522 1.128 3.384.75.854 1.743 1.286 2.977 1.286 1.225 0 2.212-.432 2.962-1.286.748-.862 1.123-1.99 1.123-3.384 0-1.403-.375-2.535-1.123-3.387zm-11.99-3.327c-1.233 0-2.006-.278-2.46-.716 3.03-2.96 6.55-4.81 6.55-4.81s-3.96 1.147-7.02 4.008c-.454-1.992 2.287-5.335 4.02-6.2 3.467-1.864 5.473-2.152 7.637-3.896 0 0-.153 11.615-8.726 11.615zm-.192 6.715c0 2.118-.694 3.96-2.08 5.516-1.388 1.558-3.17 2.336-5.34 2.336-2.196 0-3.987-.775-5.365-2.326-1.382-1.548-2.073-3.393-2.073-5.526 0-2.095.688-3.934 2.057-5.505 1.372-1.572 3.166-2.357 5.38-2.357 2.21 0 4 .79 5.367 2.364 1.37 1.576 2.055 3.406 2.055 5.498zm-4.456-3.387c-.753-.857-1.74-1.284-2.965-1.284-1.233 0-2.224.428-2.976 1.285-.75.852-1.13 1.984-1.13 3.387 0 1.395.38 2.522 1.13 3.384.75.854 1.742 1.286 2.975 1.286 1.226 0 2.212-.432 2.964-1.286.746-.862 1.12-1.99 1.12-3.384 0-1.403-.374-2.535-1.12-3.387zm-18.1 11.04h-3.23v-15.32h8.93v2.808h-5.7v3.422h5.7v2.806h-5.7v6.284zM30.933 16.16v9.812h-3.23V10.656h2.96l6.93 9.365v-9.364h3.23v15.318H38.1l-7.168-9.812zM18.4 26.174c-2.056 0-3.65-.588-4.785-1.756-1.138-1.172-1.705-2.852-1.705-5.045v-8.717h3.24v8.807c0 1.067.297 1.92.886 2.564.593.643 1.367.965 2.326.965 1 0 1.794-.33 2.39-.988.6-.653.897-1.59.897-2.807v-8.54h3.23v8.695c0 2.237-.56 3.932-1.68 5.09-1.12 1.152-2.72 1.732-4.8 1.732zm-12.89-9.79c.96.414 1.728.8 2.305 1.16.577.358 1.07.865 1.49 1.512.418.65.627 1.474.627 2.468 0 1.416-.456 2.546-1.37 3.388-.912.838-2.116 1.262-3.607 1.262-1.61 0-3.168-.496-4.68-1.483v-3.3c.868.688 1.635 1.19 2.304 1.505.668.315 1.374.47 2.126.47 1.268 0 1.9-.47 1.9-1.412 0-.325-.125-.626-.38-.91-.252-.288-.864-.632-1.834-1.045-.967-.407-1.734-.79-2.3-1.137-.568-.352-1.056-.852-1.468-1.503-.412-.652-.618-1.483-.618-2.5 0-1.315.45-2.378 1.347-3.186.897-.807 2.098-1.21 3.602-1.21 1.386 0 2.85.396 4.39 1.185v2.995c-1.72-.914-3.09-1.374-4.11-1.374-.583 0-1.046.115-1.388.35-.346.227-.517.532-.517.912 0 .294.124.572.37.834.248.262.853.603 1.81 1.022zm112.677 32.164H.36V29.745h117.827v18.803zM28.16 39.31c.296 0 .488.02.574.062.087.04.157.118.206.232.05.116.075.297.075.548v.365h.925V36.9h-.925v.325c0 .3-.02.497-.063.6-.04.1-.11.172-.203.218-.097.05-.282.07-.554.07h-.364V35.98h1.106c.343 0 .643.043.9.13.258.09.494.27.706.54.213.27.4.625.558 1.065l.942-.398-.826-2.705h-6.045v1.185h.32c.186 0 .308.02.37.057.062.04.108.097.138.175.03.078.046.242.046.497v4.66c0 .285-.01.46-.027.52-.034.105-.095.175-.18.215-.08.042-.243.063-.486.063h-.18v1.183h6.263l.95-3.178-.95-.386c-.132.47-.32.875-.565 1.216-.245.342-.522.59-.833.744-.312.153-.696.23-1.15.23h-.607c-.166 0-.274-.013-.325-.037-.05-.025-.083-.06-.1-.105-.02-.043-.026-.173-.026-.38V39.31h.327zm12.785 2.675h-.14c-.21 0-.368-.038-.48-.112-.082-.053-.213-.223-.395-.508l-2.086-3.33 1.75-1.79c.134-.14.244-.24.33-.3.085-.064.156-.104.216-.12.06-.02.163-.028.316-.028h.11v-1.185h-3.278v1.185h.29c.164 0 .265.012.305.043.04.03.06.07.06.13 0 .026-.012.06-.03.1-.022.038-.083.112-.184.223l-2.26 2.47V36.49c0-.226.018-.38.056-.46.035-.082.096-.146.18-.19.05-.03.188-.043.414-.043h.234v-1.185h-3.53v1.185h.294c.18 0 .305.02.375.064.068.043.118.11.15.194.03.087.046.256.046.51v4.67c0 .267-.015.435-.043.504-.03.086-.08.15-.15.19-.07.036-.206.057-.41.057h-.264v1.183h3.53v-1.183h-.295c-.195 0-.323-.02-.387-.054-.064-.032-.112-.092-.147-.173-.035-.083-.052-.228-.052-.442v-.864l1.102-1.11 1.272 2.14c.107.184.16.3.16.35 0 .046-.03.08-.085.11-.058.03-.22.045-.487.045h-.145v1.183h3.657v-1.183zm7.066-6.28c-.712-.827-1.642-1.24-2.79-1.24-1.168 0-2.112.415-2.834 1.245-.722.83-1.083 1.898-1.083 3.202 0 1.403.41 2.522 1.236 3.36.68.693 1.556 1.042 2.627 1.042.81 0 1.5-.182 2.074-.548.573-.367 1.024-.885 1.348-1.562.327-.673.49-1.446.49-2.318 0-1.295-.357-2.355-1.067-3.18zm4.755 3.61H49.95v1.466h2.815v-1.464zm4.677-3.336c.552 0 .992.123 1.318.373.327.246.61.702.85 1.362l.94-.398-.825-2.705h-6.047v1.185h.244c.276 0 .45.046.52.14.07.094.105.29.105.59v4.703c0 .314-.03.52-.084.613-.055.093-.2.142-.436.142h-.35v1.183h4.25c.966 0 1.664-.26 2.1-.777.43-.517.647-1.115.647-1.798 0-.737-.24-1.35-.714-1.845-.477-.497-1.133-.745-1.97-.745h-1.653V35.98h1.105zm10.306.18c-.127-.322-.304-.605-.534-.842-.23-.236-.505-.415-.824-.53-.32-.117-.724-.176-1.21-.176h-3.827v1.185h.35c.168 0 .283.02.343.057.063.04.105.1.134.185.028.08.042.256.042.516v4.705c0 .25-.016.414-.048.495-.03.078-.082.138-.15.173-.07.038-.212.057-.426.057h-.245v1.183h3.532v-1.183h-.37c-.152 0-.26-.02-.324-.057-.063-.035-.11-.095-.14-.17-.025-.054-.038-.182-.038-.38v-1.6h1.237c.836 0 1.495-.247 1.97-.744.476-.495.713-1.108.713-1.84 0-.363-.062-.71-.185-1.033zm3.593 3.15c.3 0 .49.02.576.062.087.04.156.118.206.232.05.116.075.297.075.548v.365h.925V36.9h-.925v.325c0 .3-.02.497-.062.6-.04.1-.11.172-.204.218-.094.05-.28.07-.552.07h-.364V35.98h1.107c.343 0 .643.043.9.13.258.09.494.27.707.54.213.27.398.625.558 1.065l.94-.398-.825-2.705h-6.045v1.185h.32c.185 0 .308.02.37.057.062.04.108.097.14.175.027.078.043.242.043.497v4.66c0 .285-.01.46-.027.52-.033.105-.093.175-.176.215-.082.042-.245.063-.488.063h-.18v1.183h6.262l.95-3.178-.95-.386c-.13.47-.32.875-.563 1.216-.245.342-.523.59-.833.744-.312.153-.695.23-1.15.23h-.607c-.166 0-.273-.013-.324-.037-.05-.025-.083-.06-.1-.105-.018-.043-.026-.173-.026-.38V39.31h.327zm12.61 2.675h-.208c-.242 0-.397-.02-.464-.054-.067-.032-.118-.092-.15-.175-.035-.084-.05-.27-.05-.555v-4.636c0-.283.012-.46.04-.54.025-.074.07-.13.137-.17.065-.037.2-.057.4-.057h.295v-1.185h-3.548v1.185h.276c.225 0 .37.017.435.054.068.037.114.106.142.204.02.07.03.202.03.398v1.602h-2.637v-1.49c0-.267.014-.44.04-.52.03-.08.075-.14.14-.183.068-.042.19-.063.37-.063h.327v-1.185H75.99v1.185h.32c.18 0 .3.02.365.062.062.037.108.103.136.19.03.09.046.277.046.567v4.65c0 .248-.015.41-.045.483-.027.074-.082.132-.162.172-.08.042-.22.063-.42.063h-.24v1.183h3.537v-1.183h-.245c-.22 0-.368-.018-.44-.052-.074-.033-.126-.1-.162-.2-.02-.07-.03-.248-.03-.533v-1.81h2.637v1.81c0 .285-.013.466-.044.544-.027.078-.082.138-.16.178-.078.042-.225.063-.443.063h-.235v1.183h3.548v-1.183zm8.652 0h-.208c-.297 0-.48-.043-.552-.125-.07-.087-.106-.307-.106-.66v-4.636c0-.34.032-.553.097-.638.067-.086.225-.13.478-.13h.292v-1.184h-6.476v1.185h.32c.414 0 .62.172.62.515 0 .078-.017.18-.05.305l-1.28 4.735c-.114.42-.342.633-.685.633h-.264l-.77 2.52.943.4c.163-.497.4-.91.704-1.24.304-.332.79-.497 1.46-.497h3.136c.672 0 1.16.167 1.465.5.305.332.54.745.7 1.236l.946-.4-.768-2.52zm-5.593-.472c0-.066.012-.145.035-.24l1.324-5.317h1.573v5.874h-2.43c-.338 0-.504-.105-.504-.317zM65.46 38.3c-.177.092-.454.14-.83.14h-.62v-2.43h.805c.374 0 .656.087.847.26.256.226.385.538.385.93 0 .26-.056.488-.162.678-.11.19-.25.33-.426.423zm-7.33 1.146c.174.068.328.2.46.396.136.2.2.445.2.744 0 .323-.094.602-.286.835-.193.238-.508.355-.948.355h-1.22V39.34h1.032c.333 0 .587.035.762.106zm-12.945 2.508c-.54 0-.973-.24-1.303-.724-.382-.564-.572-1.332-.572-2.3 0-.968.205-1.76.614-2.374.324-.487.763-.73 1.314-.73.328 0 .632.117.913.344.28.23.503.576.668 1.036.166.463.248 1.033.248 1.712 0 .965-.192 1.735-.577 2.312-.325.483-.76.724-1.303.724z"></path>
+        </svg></a>
+        <!-- end block logo-->
+        <!-- block menu-btn-->
+        <button class="menu-btn header__btn" type="button"><span class="menu-btn__barholder"></span>
+        </button>
+        <!-- end block menu-btn-->
+      </header>
+      <!-- end block header-->
+      <!--block about-->
+      <section class="about">
+        <h2 class="about__title titles">Про компанію
+        </h2>
+        <p class="about__lead">Еко- бренд SUN FOODS&trade;&nbsp;&mdash; торгова марка сучасної інноваційної української компанії &quot;СІНТЕКС&quot;, яка спеціалізується на&nbsp;виробництві 100 % натуральних продуктах харчування.
+        </p>
+        <figure class="about__photo">
+          <picture>
+            <source srcset="img/about/about__img-1140.jpg" media="(min-width: 47em)"/><img class="about__img" src="img/about/about__img-700.jpg" alt="photo" title=""/>
+          </picture>
+        </figure>
+        <ul class="about__dots">
+          <li class="about__dot">
+          </li>
+          <li class="about__dot">
+          </li>
+          <li class="about__dot">
+          </li>
+        </ul>
+        <p class="about__info about__info--color">Саме завдяки новим NST-технологіям SUN FOODS&trade; може похвалитися широким асортиментом продукції унікальної якості з&nbsp;поліпшеними характеристиками інтенсивносі аромату, кольору і&nbsp;смаку своєї продукції.
+        </p>
+        <p class="about__info about__info--floated">SUN FOODS&trade; завжди прагне принести до&nbsp;столу споживача продукти найвищого ґатунку. Саме з&nbsp;цієї причини, усі овочі і&nbsp;пряно-ароматичні страви вирощуються в&nbsp;Україні, що&nbsp;робить можливим контролювати процеси вирощування і&nbsp;проводити ретельний відбір якісної сировини. Уся сировинна база&nbsp;&mdash; поля овочів і&nbsp;плантації ароматичних трав (базилік, кріп, петрушка, орегано, розмарин, чабер) розміщені у&nbsp;безпосередній близькості від сучасного виробничого комплексу у Н.&nbsp;&nbsp;Каховці.
+        </p>
+        <p class="about__info">Тільки завдяки своєрідному мікроклімату екологічно чистого Херсонської Таврії, традиціям і&nbsp;спадщині предків, які передаються від батьків до&nbsp;дітей, продукти завжди, на&nbsp;протязі поколінь, мають свій характерний смак і&nbsp;аромат, та&nbsp;роблять ці&nbsp;коштовності природи традиційною городницею України. Тепер Ви&nbsp;набагато ближче до&nbsp;таємниці та&nbsp;чарівництва Херсонщини і&nbsp;можете це&nbsp;спробувати.
+        </p>
+      </section>
+      <!--end block about-->
+      <!--block technology-->
+      <section class="technology">
+        <h2 class="technology__title titles">Как мы производим нашу продукцию
+        </h2>
+        <p class="technology__info technology__info--color">В производстве мы используем современные NST-технологии (NewSolarTechnologies) и получаем качественно новый вид сушеных монопродуктов наивысшего качества с сохранённым натуральным цветом, запахом, вкусом и биоэнергетикой свежего продукта, у которых максимально сохранены полезные вещества: витамины, минералы, антиоксиданты, которые в организме не вырабатываются и поступают только с пищей.
+        </p>
+        <figure class="technology__photo technology__photo--infrared" id="photoFirst"><img class="technology__img" src="img/technology/technology__img-1.png" alt="food" title=""/>
+          <figcaption class="technology__desc technology__desc--desc-right">Этап инфракрасной сушки
+          </figcaption>
+        </figure>
+        <p class="technology__info">NST-Технологии, как вид эко консервации (обезвоженные продукты), это использование NST-4 инфракрасной сушки с NST способом щадящей деликатной сушки при невысоких t = 50 ... 55&deg;С для производства натуральных сушеных продуктов сушеные овощи, сушеная зелень, сушеные грибы, фрукты, ягоды, мясо, в т.ч. пищевых порошков с максимальным сохранением биологически-активных веществ, микро и макроэлементов, органических кислот, хлорофилла, клетчатки и др. полезных веществ.
+        </p>
+        <figure class="technology__photo technology__photo--low-temp" id="photoSecond"><img class="technology__img" src="img/technology/technology__img-2.png" alt="food" title=""/>
+          <figcaption class="technology__desc technology__desc--desc-left">Этап <br/>низко-<br/>температурной <br/>сушки (50-55&deg;С)
+          </figcaption>
+        </figure>
+        <p class="technology__info technology__info--iconed">Технологический процесс сушки по NST-Технологии основан на применении инфракрасных лучей определённой длины волны которые активно поглощаются молекулами воды которая содержится в продуктах растительных или животного происхождения, и легко выводят её на поверхность. В тоже время эти лучи не взаимодействуют с тканями и не разрушает клетки продукта который подвергается сушке. Поэтому процесс удаления клеточной и внеклеточной влаги возможен при относительно невысоких температурах, что дает повод говорить о получении с помощью применяемой NST-технологии качественно нового вида продуктов с сохранением всех природних свойств свежего продукта.
+        </p>
+        <p class="technology__promo">Продукт относится к категории 100% натуральные эко продукты, без усилителей вкуса, без ароматизаторов, без консервантов, без красителей, класса - &ldquo;Премиум&rdquo;
+        </p>
+        <p class="technology__important technology__important--bordered">В отличии от свежих продуктов, которые даже в сверх комфортных условиях хранения, уже к средине зимы теряют больше половины своих полезных свойств, наши сушеные натуральные продукты на протяжении длительного срока хранения не утрачивают своего изначального качества.
+        </p>
+        <figure class="technology__photo technology__photo--restore"><img class="technology__img" src="img/technology/technology__img-3.png" alt="food" title=""/>
+          <figcaption class="technology__desc technology__desc--col">
+            <p class="technology__desc-info">Продукция произведена из культивированных грибов шампиньонов, качественных свежих овощей и зелени выращенных в открытом грунте экологически чистой области Украины, Херсонской области, традиционной огороднице Украины и переработана структурным подразделением Компании &ldquo;СИНТЕКС&rdquo; &mdash; на Новокаховском консервно-сушильном заводе.
+            </p>
+            <p class="technology__desc-info">Чтобы восстановить все физические, химические и органолептические свойства продукта, сушеный продукт достаточно замочить в тёплой воде на 10-15 минут. При приготовлении первых блюд, соусов, ароматических масел &mdash; применять без предварительного замачивания. При приготовлении вторых блюд, выпечки, салатов &mdash; с предварительным замачиванием. Восстановление: овощи, зелень, фрукты, ягоды &mdash; в 5-6 раз, грибы &mdash; в 7-8 раз.
+            </p>
+          </figcaption>
+        </figure>
+        <p class="technology__important technology__important--framed">В перерасчёте через восстановление, особенно в зимний период, цена сушеной продукции заметно выигрывает в сравнении с свежей из парников, и явно качественнее и более полезная для здорового питания и пополнения необходимых витаминных запасов в сравнении с продукцией на гидропонике
+        </p>
+      </section>
+      <!--end block technology-->
+      <!--block safety-->
+      <section class="safety">
+        <h2 class="safety__title titles">Безопасность продукции
+        </h2>
+        <div class="safety__desc">
+          <h3 class="safety__desc-title">Науково-технічне співробітництво
+          </h3>
+          <p class="safety__desc-info">Компанія займається стандартизацією та впровадженням технологій екобезпечної та органічної продукції, вдосконалює процеси виробництва розробляє асортимент з використанням нових видів сировини, спільно з Національним університетом біоресурсів і природокористування (НУБіП ) України &laquo;Науково-дослідний та проектний інститут стандартизації і технологій екобезпечної та органічної продукції&raquo;.
+          </p>
+        </div>
+        <div class="safety__desc">
+          <h3 class="safety__desc-title">Стерилизация и сроки хранения
+          </h3>
+          <p class="safety__desc-info">Инфракрасное излучение при применении NST-технологий и стерилизации СВЧ способствует уничтожению микрофлоры на поверхности продукта, делая сушеные продукты практически стерильным, что позволяет создать условия для гарантированных длительных сроков хранения готовой продукции до 36 месяцев от даты производства, без создания специальных условий.
+          </p>
+        </div>
+        <div class="safety__desc">
+          <h3 class="safety__desc-title">Оборудование контроля
+          </h3>
+          <ul class="safety__desc-list">
+            <li class="safety__item">на производстве внедрена система контроля готовой продукции на наличие металлических примесей, вся сыпучая продукция непосредственно перед упаковыванием пропускается через специальное оборудование &mdash; магнитный сепаратор;
+            </li>
+            <li class="safety__item">контроль влажности готового продукта ведется на производстве с помощью инфракрасного анализатора влажности фирмы &laquo;Radwag&raquo; одного из мировых лидеров производства лабораторного оборудывания.
+            </li>
+          </ul>
+        </div>
+        <div class="safety__desc">
+          <h3 class="safety__desc-title">Сертификация
+          </h3>
+          <ul class="safety__desc-list">
+            <li class="safety__item">у предприятия имеется вся разрешительная документация для производства продуктов питания;
+            </li>
+            <li class="safety__item">предприятие сертифицировано по системе ISO 9001 : 2009;
+            </li>
+            <li class="safety__item">предприятие готовится к переходу на сертификацию по системе ISO 9001 : 2015.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--block safety-->
+      <!--block footer-->
+      <footer class="footer">
+        <address class="footer__address">
+          <div class="footer__col">
+            <p class="footer__info">тов тк &ldquo;синтекс&rdquo;
+            </p>
+            <p class="footer__info">г. Херсон 73013, ул. Ладычука, 68Б
+            </p>
+          </div>
+          <div class="footer__col"><a class="footer__link footer__link--tel" href="tel:+380552424284">+38 (0552) 42-42-84</a><br/><a class="footer__link footer__link--tel" href="tel:+380552424294">+38 (0552) 42-42-94</a>
+          </div>
+          <div class="footer__col"><a class="footer__link" href="mailto:sintex@ukr.net">sintex@ukr.net</a>
+          </div>
+          <div class="footer__col"><a class="footer__link" href="#" target="_blank">Компания &quot;СИТ-релайн&quot;</a><br/><a class="footer__link" href="#" target="_blank">Агропромышленная группа связанных компаний &quot;Сінтекс&quot;</a>
+          </div>
+          <button class="footer__subscribe" type="button">Підписатися
+          </button>
+        </address>
+        <div class="footer__row">
+          <p class="footer__info">&copy; 2016 SUN FOODS Все права защищены
+          </p>
+          <p class="footer__info footer__info--made">Адаптивные сайты от <a class="footer__link" href="https://makebecool.com/" target="_blank" title="Разработка адаптивных сайтов">makebecool</a>
+          </p>
+        </div>
+      </footer>
+      <!--end block footer-->
+    </div>
+    <!-- build:js js/vendor.js defer-->
+    <script defer src="js/libs/picturefill.min.js"></script>
+    <script defer src="js/libs/jquery.min.js"></script>
+    <script defer src="js/libs/ScrollMagic.min.js"></script>
+    <!-- endbuild-->
+    <!-- build:js js/main.js defer-->
+    <script defer src="js/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>

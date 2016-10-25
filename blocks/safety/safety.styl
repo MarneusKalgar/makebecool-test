@@ -1,0 +1,116 @@
+/*!******************SAFETY******************/
+.safety
+	position relative
+	flex-container(column, wrap, space-between, center)
+	padding-bottom 5rem
+	&:before
+		position absolute
+		content ''
+		bottom 1.8rem
+		left 0
+		width 100%
+		height 1.125rem
+		background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAASAgMAAACIiAACAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAADu7u4AAAAOadyHAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAiSURBVBjTY2BgDWUAg9AAMAXh0ksQyAZxgWwkLt0EB9TvAH16I91fqdD5AAAAAElFTkSuQmCC') center no-repeat
+	+above($media-md)
+		flex-direction row
+		align-items flex-start
+		&:before
+			bottom 1.5rem
+	+above($media-lg)
+		max-width $base-block-max-width
+		margin 0 auto
+		padding 0 $base-block-padding-xlg 5rem $base-block-padding-xlg
+		
+		//element TITLE
+	&__title
+		position relative
+		z-index 10
+		margin 0
+		padding 6.7rem 0 2rem
+		border-bottom $heading-border-width solid $heading-border-color
+		overflow hidden
+		&:before
+			position absolute
+			content ''
+			left 0
+			top 0
+			z-index -1
+			height 18.125rem
+			width 100%
+			background transparent url('../img/page/title-bg.png') center repeat-y
+		+above($media-md)
+			padding 6.8rem 0 2rem					
+		
+		//element DESC(1)
+	&__desc:nth-of-type(1)
+		margin-top 4rem
+		+above($media-md)
+			width 44%
+			margin-top 3.9rem
+		+above($media-lg)
+			width 40%
+		//DESC(2)
+	&__desc:nth-of-type(2)
+		margin-top 2.4rem
+		padding 3.5rem 1.1rem 0 0
+		border-top $base-element-border-width solid #f7f7f7
+		border-right $base-element-border-width solid #f7f7f7
+		+above($media-md)
+			width 40%
+			margin-top 3.8rem
+		+above($media-lg)
+			padding 3.4rem 5.8rem 0 0
+		//DESC(3)
+	&__desc:nth-of-type(3)
+		margin-top 2.1rem
+		padding 3.5rem 1.1rem 0 0
+		border-top $base-element-border-width solid #f7f7f7
+		border-right $base-element-border-width solid #f7f7f7
+		+above($media-md)
+			width 44%
+			margin-top 2.3rem
+			padding 3.6rem 1.1rem 0 0
+		+above($media-lg)
+			width 41.5%
+		//DESC(4)
+	&__desc:nth-of-type(4)
+		margin-top 2rem
+		padding 3.5rem 2.5rem 0 0
+		border-top $base-element-border-width solid #f7f7f7
+		border-right $base-element-border-width solid #f7f7f7
+		+above($media-md)
+			width 38%
+			margin-top 4.8rem
+			padding 3.6rem 2.1rem 0 0
+		+above($media-lg)
+			width 45%
+			padding 3.6rem 2.4rem 0 0
+		
+		//element DESC-TITLE
+	&__desc-title
+		margin 0
+		font-size 1.125rem
+		line-height 1.25rem
+		color $base-color-light-green
+		
+		//element DESC-INFO
+	&__desc-info
+		margin 0
+		padding-top .7rem
+		
+		//element DESC-LIST
+	&__desc-list
+		margin 0
+		padding .65rem 0 0 .9rem
+		list-style-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAFklEQVQI12MMnyfwnwELYGLAAeghAQAswgIQMoy3BgAAAABJRU5ErkJggg==')
+		+above($media-lg)
+			padding .65rem 1.5rem 0 0
+			
+		//element ITEM
+	&__item
+		margin-top 1.5rem
+		padding-left .65rem
+		&:first-child
+			margin-top 0
+		+above($media-lg)
+			padding-left 0

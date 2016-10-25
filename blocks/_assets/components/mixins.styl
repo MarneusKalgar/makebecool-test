@@ -1,0 +1,27 @@
+// @font-face
+font-face(family, local1, local2, woff2-url, woff-url, weight, style)
+	@font-face 
+		font-family family
+		src local(local1), local(local1), 
+				url(woff2-url) format('woff2'), 
+				url(woff-url) format('woff')
+		font-weight weight
+		font-style style
+		font-display swap
+		
+// flex container
+flex-container(dir, wr, jc, ai)
+	display flex
+	flex-direction dir
+	flex-wrap wr
+	justify-content jc
+	align-items ai
+	
+//heading
+heading(fw, fz, ff, ta, color, lsp)
+	font fw fz ff
+	text-align ta
+	color color
+	text-transform uppercase
+	letter-spacing lsp
+		

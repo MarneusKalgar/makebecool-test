@@ -1,0 +1,57 @@
+/*******************PAGE******************/
+.page
+	position relative
+	z-index 0
+	margin 0 auto
+	padding 0
+	font normal $base-font-size / $base-line-height $base-font-family
+	color $base-text-color
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing antialiased
+	overflow-x hidden
+	&:before
+		position absolute
+		content ''
+		top 0
+		left 0
+		z-index -10
+		width 100%
+		height 100%
+		background url("../img/page/page-bg.png")
+		background-position -5px -9px
+		background-size 84px 84px
+		overflow-x hidden
+	+above($media-md)
+		padding $base-page-border-width-768
+		background-color $base-color-light-green
+	+above($media-lg)
+		padding $base-page-border-width-1366
+		
+		/***** elem wrap *****/
+	&__wrap
+		height 100%
+		position relative
+		box-sizing border-box
+		margin 0 auto
+		padding 0 $base-page-padding-320
+		min-width 19rem //304px
+		max-width 110rem//1760rem
+		overflow hidden
+		background #fff
+		+above($media-md)
+			padding 0 $base-page-padding-768
+		+above($media-lg)
+			padding 0 $base-page-padding-1336
+			overflow visible
+			
+			
+	/***** block to style headings *****/		
+.titles
+	width 100%
+	font $heading-font-size / $heading-line-height $heading-font-family
+	text-rendering optimizeLegibility
+	color $heading-color
+	text-align center
+	+above($media-md)
+		font-size $heading-font-size * (48 / 36)
+		line-height $heading-line-height * (50 / 40)

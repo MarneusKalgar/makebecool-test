@@ -1,0 +1,6 @@
+"use stict";
+
+	menuBtn();
+
+	technology();
+

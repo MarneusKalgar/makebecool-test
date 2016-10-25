@@ -1,0 +1,343 @@
+/*!******************TECHNOLOGY******************/
+.technology
+	position relative
+	flex-container(column, wrap, center, flex-start)
+	margin 7.5rem 0 5rem
+	width 100%
+	+above($media-md)
+		margin 4.85rem 0
+	+above($media-lg)
+		display block
+		max-width $base-block-max-width
+		margin 4.8rem auto
+		
+		//element TITLE
+	&__title
+		position relative
+		z-index 10
+		margin 0
+		padding 6rem 0 1.9rem
+		border-bottom $heading-border-width solid $heading-border-color
+		overflow hidden
+		&:before
+			position absolute
+			content ''
+			left 0
+			bottom 0
+			z-index -1
+			height 18.125rem
+			width 100%
+			background transparent url('../img/page/title-bg.png') center repeat-y
+		+above($media-md)
+			padding-top 6.1rem
+			margin-bottom 3.6rem
+		+above($media-lg)
+			box-sizing border-box
+			width 90%
+			margin 0 auto 3.7rem
+			padding-top 6.25rem
+		
+		//element INFO
+	&__info
+		position relative
+		margin 0
+		&:nth-child(11)
+			padding-top 1.5rem
+		+above($media-lg)
+
+			&:nth-of-type(2)
+				width 33.16535%
+				max-width 26.25rem
+				margin-left 10.5%
+				margin-top .4rem
+
+			&:nth-of-type(6)
+				width 33%
+				margin 7.5rem 11% 0 -10rem
+
+			&:nth-of-type(7)
+				display none
+				width 33%
+				position absolute
+				bottom 2rem
+			
+			//modifier COLOR
+		&--color
+			padding 3.6rem 0 1.2rem
+			font-size $base-font-size-colored
+			color $base-text-color-colored
+			line-height $base-line-height-colored
+			+above($media-md)
+				font-size $base-font-size-colored * (18 / 16)
+				padding-top 0
+			+above($media-lg)
+				width 33.16535%
+				max-width 26.25rem
+				margin-left 10.5%
+				padding 0 0 1.2rem
+			
+			//modifier ICONED
+		&--iconed
+			position relative
+			+above($media-md)
+				&:after
+					position absolute
+					content ''
+					bottom -2.8rem
+					left 1.8rem
+					width 100%
+					height 1.125rem
+					background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAASAgMAAACIiAACAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAADu7u4AAAAOadyHAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAiSURBVBjTY2BgDWUAg9AAMAXh0ksQyAZxgWwkLt0EB9TvAH16I91fqdD5AAAAAElFTkSuQmCC') 0 0 no-repeat
+			+above($media-lg)
+				width 33.16535%
+				max-width 26.25rem
+				margin-left 10.5%
+				margin-top 1.4rem
+				&:after
+					left 0
+					
+			//PARALAXED container wraps two image-blocks
+	&__parallax
+		position absolute
+		top 15.1rem
+		right 5%
+		transform translateY(0)
+		//transition transform .1s ease-in-out
+				
+		//element PHOTO
+	&__photo
+		position relative
+		width 34.75rem
+		height 22.5rem
+		transition all .2s
+		&:before
+			position absolute
+			content ''
+			top .375rem
+			bottom .375rem
+			width 16.0625rem
+			background-color #fff
+			
+			//modifier INFRARAED
+		&--infrared
+			left calc(50% - 22.5rem)	//fluid positioning
+			margin 1.9rem 0 15.3rem 0
+			background-color #57109e
+			&:before
+				left .375rem
+			+above($media-xs)
+				left 0  //restore
+			+above($media-md)
+				margin 2.1rem auto 15.2rem
+			+above($media-lg)
+				position absolute
+				top 15rem
+				left auto
+				right 5%
+				margin 0 0 16.9rem 0
+				transform translateY(0)
+				//transition transform .2s
+			.technology__img //in element PHOTO--INFRARAED
+				position absolute
+				left 4.9rem
+				top 8.6rem
+				width 23.25rem
+				height 25.9375rem
+				+above($media-md)
+					left 5.5rem
+			
+			//modifier LOW-TEMP
+		&--low-temp
+			left calc(50% - 10.7rem) //fluid positioning
+			margin 3.6rem 0 6.4rem 0
+			background-color #d1a815
+			&:before
+				right .375rem
+			+above($media-xs)
+				left 0 //restore
+			+above($media-md)
+				margin 3.3rem auto 7.2rem
+			+above($media-lg)
+				position absolute
+				top 54.4rem
+				left auto
+				right 5%
+				margin 0 0 15.2rem 0
+				transform translateY(0)
+				//transition transform .2s
+			.technology__img  //in element PHOTO--LOW-TEMP
+				position absolute
+				right -.2rem
+				bottom -7.9rem
+				width 34.625rem
+				height 16.0625rem
+			
+			//modifier RESTORE
+		&--restore
+			position relative
+			width 100%
+			height auto
+			//max-height 60rem
+			margin 0
+			//overflow visible
+			&:before
+				display none
+			.technology__img //in modifier RESTORE
+				position relative
+				width 25rem
+				max-width 43.6875rem
+				height auto
+				left calc(50% - 25rem / 2)
+				margin 0
+				padding-bottom 1rem
+				+above($media-md)
+					left calc(50% - 43rem / 2)
+					width 100%
+					margin-top 3.5rem
+					padding-bottom 1.5rem
+				+above($media-lg)
+					position absolute
+					left -11.5%
+					top 6.7rem
+					//margin-top 10.3rem
+			+above($media-lg)
+				min-height 33rem
+				margin 0 12%
+
+		//element DESC
+	&__desc
+		box-sizing border-box
+		font-size 1.5rem
+		font-weight bold
+		line-height 1.875rem
+		color #fff
+		text-overflow ellipsis
+		overflow hidden
+		
+			//modifier DESC-RIGHT
+		&--desc-right
+			height 7.625rem
+			width 11.375rem
+			padding 1.6rem 0 0 18.25rem
+			
+			//modifier DESC-LEFT
+		&--desc-left
+			height 11.375rem
+			width 14rem
+			padding 1.7rem 0 0 2rem
+			white-space pre
+			
+			//modifier COL
+		&--col
+			margin 0
+			color $base-text-color
+			font-size $base-font-size
+			+above($media-lg)
+				width 33%
+				margin 0 0 0 38%
+				//margin 0 0 0 30.0625rem
+				padding-top 7.2rem
+				//margin 7.4rem 7% 0 50%
+				
+		//element DESC-INFO
+	&__desc-info
+		margin 0
+		line-height $base-line-height
+		&:last-child
+			margin-top 1.5rem
+			
+		//element PROMO
+	&__promo
+		position relative
+		margin 9.3rem 0 5.5rem
+		font-size 1.25rem
+		line-height 1.875rem
+		color $base-text-color-colored
+		text-align center
+		&:before
+			position absolute
+			content ''
+			left 44%
+			top -2.8rem
+			width 1.875rem
+			height 1.875rem
+			background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMwQTJDOEYyOTE2NTExRTZBNTkzRjc3QTUzNUU3RDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjMwQTJDOEYzOTE2NTExRTZBNTkzRjc3QTUzNUU3RDJFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzBBMkM4RjA5MTY1MTFFNkE1OTNGNzdBNTM1RTdEMkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzBBMkM4RjE5MTY1MTFFNkE1OTNGNzdBNTM1RTdEMkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4w4GB7AAAAaUlEQVR42mL8//8/Azq4tFIMRGFK4AeMpChmYhggMGrx8LeYhQw9uFLvf1LUj8Yx/eIYWkqNpmp8oIEaqX00VY9aTDPAeHGFKAOJZe9oUI9aPPjLalLL3gGrJPACvfBXo3E8ajEYAAQYAFk8DmKrEi46AAAAAElFTkSuQmCC') 0 0 no-repeat
+		+above($media-md)
+			font-size $base-font-size-colored * (24 / 16)
+			margin 9.9rem 3.5rem 5.4rem
+			&:before
+				left 47%
+				top -3.1rem
+		+above($media-lg)
+			margin 12.7rem 28% 6.5rem
+
+		//element IMPORTANT
+	&__important
+		font-size $base-font-size-colored
+		line-height 1.875rem
+		text-align center
+			
+			//modifier BORDERED
+		&--bordered
+			box-sizing border-box
+			position relative
+			max-height 24.1875rem
+			margin-bottom 2.3rem
+			padding 3.3rem 0 3.2rem
+			color $base-color-light-green
+			text-align center
+			border-top $base-element-border-width solid $base-color-light-green
+			border-bottom $base-element-border-width solid $base-color-light-green
+			&:after //hack to match the mockup! (clipping the text)
+				position absolute
+				content ''
+				left 0
+				bottom 0
+				width 100%
+				height 3.2rem
+				background-color #fff
+			+above($media-md)
+				height 16.625rem
+				margin-left 1.9rem
+				margin-right 1.9rem
+				padding 3.3rem 4rem 3.1rem 5.8rem 
+				font-size $base-font-size-colored * (18 / 16)
+			+above($media-lg)
+				position relative
+				height auto
+				margin 1.1rem 12.5% 0 10%
+				padding 3.4rem 6rem 3.2rem 8rem
+				&:after
+					display none
+			
+			//modifier FRAMED
+		&--framed
+			box-sizing border-box
+			position relative
+			max-height 28.75rem
+			margin 5.2rem 0 0
+			padding 3.4rem .9rem 4rem
+			text-align center
+			border $base-element-border-width solid #f7f7f7
+			overflow hidden
+			&:after //hack to match the mockup! (clipping the text)
+				position absolute
+				content ''
+				left 0
+				bottom 0
+				width 100%
+				height 4rem
+				background-color #fff
+			+above($media-md)
+				max-height 18.75rem
+				margin-top 5rem
+				padding 3.1rem 3.5rem 3.6rem
+				font-size $base-font-size-colored * (18 / 16)
+				&:after
+					height 3.5rem
+			+above($media-lg)
+				height auto
+				margin 4.7rem 8rem 0
+				padding 3.2rem 7rem 3.6rem
+				&:after
+					display none

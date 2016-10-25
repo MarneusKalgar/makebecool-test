@@ -1,0 +1,23 @@
+mixin footer
+	+b.FOOTER.footer
+
+		+e.ADDRESS.address
+			+e.DIV.col
+				+e.P.info тов тк &ldquo;синтекс&rdquo;
+				+e.P.info г. Херсон 73013, ул. Ладычука, 68Б
+			+e.DIV.col
+				+e.link.--tel(href="tel:+380552424284") +38 (0552) 42-42-84
+				br
+				+e.link.--tel(href="tel:+380552424294") +38 (0552) 42-42-94
+			+e.DIV.col
+				+e.link(href="mailto:sintex@ukr.net") sintex@ukr.net
+			+e.DIV.col
+				+e.link(href="#", target="_blank") Компания &quot;СИТ-релайн&quot;
+				br
+				+e.link(href="#", target="_blank") Агропромышленная группа связанных компаний &quot;Сінтекс&quot;
+			+e.BUTTON.subscribe(type="button") Підписатися
+		
+		+e.DIV.row
+			+e.P.info &copy; 2016 SUN FOODS Все права защищены
+			+e.P.info.--made Адаптивные сайты от 
+				+e.link(href="https://makebecool.com/", target="_blank", title="Разработка адаптивных сайтов") makebecool

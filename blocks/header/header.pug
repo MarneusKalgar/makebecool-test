@@ -1,0 +1,20 @@
+include ../logo/logo
+include ../menu-btn/menu-btn
+
+mixin header
+	+b.HEADER.header
+		// block logo
+		+logo({
+			"id": "logo",
+			"class": "logo",
+			"href": "#"
+		})
+		// end block logo
+
+		// block menu-btn
+		+menu-btn({
+			"class": "header__btn"
+		})
+		// end block menu-btn
+
+		

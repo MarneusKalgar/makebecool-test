@@ -1,0 +1,22 @@
+/*!******************HEADER******************/
+.header
+	box-sizing border-box
+	flex-container(row, wrap, space-between, center)
+	position absolute
+	top 0
+	left 0
+	z-index 1000
+	width 100%
+	margin 0 auto
+	padding 0 $base-page-padding-320
+	+above($media-md)
+		padding 0 ( $base-page-padding-320 / 1.7 )
+	+above($media-lg)
+		padding 0 ( $base-page-padding-320 / 2.2 )
+	
+	&__btn
+		margin-top .2rem
+		+above($media-md)
+			margin 1.5rem -.5rem 0 0
+		
+		

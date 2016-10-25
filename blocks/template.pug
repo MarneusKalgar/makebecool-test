@@ -1,0 +1,29 @@
+include _assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include head/head
+include page/page
+
+doctype html
+html(lang="ru")
+	
+	head
+		+head({
+			"title": "SUN FOODS Еко-бренд",
+			"author": "Igor Chernobay",
+			"description": "SUNFOODS EKO BRAND"
+		})
+
+	body.page
+		.page__wrap
+			+page()
+		
+		// build:js js/vendor.js defer
+		script(defer, src="js/libs/picturefill.min.js")
+		script(defer, src="js/libs/jquery.min.js")
+		script(defer, src="js/libs/ScrollMagic.min.js")
+		// endbuild
+		//-script(src="js/libs/debug.addIndicators.min.js") //uncomment if you want indicators
+		// build:js js/main.js defer
+		script(defer, src="js/main.js")
+		// endbuild

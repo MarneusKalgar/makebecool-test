@@ -1,0 +1,144 @@
+/*!******************ABOUT******************/
+.about
+	flex-container(column, wrap, space-between, center)
+	+above($media-md)
+		flex-direction row
+		align-items flex-start
+	+above($media-lg)
+		display block
+		margin 0 auto
+		padding 0 $base-block-padding-xlg
+		max-width $base-block-max-width
+		
+		//element TITLE
+	&__title
+		position relative
+		z-index 10
+		margin 0
+		padding 6.7rem 0 2.0rem
+		&:before
+			position absolute
+			content ''
+			left 0
+			top 0
+			z-index -1
+			height 100%
+			width 100%
+			background transparent url('../img/page/title-bg.png') center repeat-y
+		+above($media-md)
+			padding 6.1rem 0 2.1rem
+		
+		//element LEAD
+	&__lead
+		position relative
+		z-index 10
+		margin 0
+		padding .9rem 0 1.2rem
+		font-size $base-font-size-colored
+		color $base-text-color-colored
+		line-height $base-line-height-colored
+		text-align center
+		border-top $about-border-width solid $about-border-color
+		+above($media-md)
+			width 78.7%
+			max-width 61.25rem
+			margin 0 auto
+			padding 3.2rem 2.7rem 14rem 2.1rem
+			font-size $base-font-size-colored * (18 / 16)
+			border-right $about-border-width solid $about-border-color
+			border-left $about-border-width solid $about-border-color
+		+above($media-lg)
+			box-sizing border-box
+			width 88.3%
+			max-width 65rem
+			padding 3.2rem 7.5rem 25.1rem
+		
+		//element DOTS
+	&__dots
+		display none
+		+above($media-lg)
+			box-sizing border-box
+			display block
+			position absolute
+			top 25.1rem
+			left -1rem
+			width 2rem
+			height 5.5rem
+			margin 0
+			padding .8rem .5rem .5rem
+			list-style-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAFklEQVQI12MMnyfwnwELYGLAAeghAQAswgIQMoy3BgAAAABJRU5ErkJggg==')
+			background-color #fff
+		
+		//element DOT
+	&__dot
+		margin -.2rem 0 0 1rem
+		padding 0
+		width .5rem
+		width .5rem
+		&:hover
+			cursor pointer
+		
+		//element INFO
+	&__info
+		margin 0
+		letter-spacing $base-letter-spacing
+		&:last-child
+			margin-top 1.7rem
+			+above($media-md)
+				margin 3.2rem auto 0
+				width 48%
+			+above($media-lg)
+				width 42%
+				//margin-top 15.2rem
+				margin-top 21.35%	
+		+above($media-md)
+			width 45%
+			
+			//modifier COLOR
+		&--color
+			margin-bottom 2rem
+			font-size $base-font-size-colored
+			color $base-text-color-colored
+			line-height $base-line-height-colored
+			//letter-spacing $base-letter-spacing-colored
+			+above($media-md)
+				width 48%
+				font-size $base-font-size-colored * 1.125
+			+above($media-lg)
+				float left
+				width 40%
+				max-width 28.5rem
+				margin 0 0 0 6%
+			
+			//modifier FLOATED
+		&--floated
+			+above($media-md)
+				width 47%
+				margin .3rem .5rem 0 0
+			+above($media-lg)
+				float right
+				width 42.5%
+				max-width 30rem
+				margin .2rem 6.5% 0 0
+
+		//element PHOTO		
+	&__photo
+		position relative
+		width 100%
+		max-width 71.25rem
+		margin 0 auto 1.3rem
+		+above($media-md)
+			position relative
+			bottom 12rem
+			z-index 0
+			margin-bottom -9.1rem
+		+above($media-lg)
+			bottom 23.1rem
+			margin-bottom -20rem
+			
+		//element IMG
+	&__img
+		display block
+		width 100%
+		height auto
+		
